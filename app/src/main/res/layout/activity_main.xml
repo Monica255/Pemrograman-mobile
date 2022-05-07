@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1FFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainmenu"
+        app:title="Data Barang"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#F1FFFF">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:src="@drawable/artboard_1_copy_3"
+                ></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to \nMyWarehouse"
+                android:padding="20dp"
+                android:textSize="34sp"
+                android:textColor="#316B83"
+                ></TextView>
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/keluar"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="238dp"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/close" />
+
+        </LinearLayout>-->
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/input_data"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#6FCECE"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/input_svgrepo_com" />
+            <TextView
+                android:text="Input Data"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <!--<RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>-->
+        <LinearLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/tampil_data"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#6FCECE"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/canned_food_svgrepo_com" />
+            <TextView
+                android:text="Tampil Data"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        android:background="#ffffff"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_nav"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

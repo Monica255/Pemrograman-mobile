@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1FFFF"
+    tools:context=".profile">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F1FFFF"
+                    android:theme="@style/MyThemeOverlay_Toolbar2"
+                    app:elevation="0dp"
+                    app:titleTextColor="#A6AFB7">
+
+
+                        <TextView
+                            android:id="@+id/toolbar_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Profile"
+                            android:textColor="#8AA7C1"
+                            android:textSize="20sp" />
+                </androidx.appcompat.widget.Toolbar>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:background="#6FCECE"
+                    android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Warehouse"
+                            android:textSize="22sp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="20dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Space Management"
+                            android:textSize="28sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:textStyle="bold"
+                            />
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:alpha="0.6">
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/capacity"
+                                    android:layout_gravity="center_horizontal"
+                                    app:tint="@color/green"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Capacity"
+                                    android:textColor="#43464b"
+                                    android:layout_gravity="center_horizontal"/>
+                                <TextView
+                                    android:id="@+id/capacity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="/"
+                                    android:textColor="#43464b"
+                                    android:textSize="17sp"
+                                    android:layout_gravity="center_horizontal"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Available Space"
+                            android:textSize="22sp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/border"
+                            android:backgroundTint="@color/white"
+                            android:alpha="0.6"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+                        <ProgressBar
+                            android:id="@+id/progress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:max="100"/>
+                        <TextView
+                            android:id="@+id/persentase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:textColor="#43464b"
+                            android:layout_gravity="center_horizontal"/>
+                        </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bounty of Goods
+                            Warehouse"
+                            android:textSize="20sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="40dp"
+                            android:textStyle="bold"
+                            android:textColor="#43464b"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/pinmap"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    app:tint="#ABB2B8"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Makassar, Indonesia"
+                                    android:textColor="#ABB2B8"
+                                    android:textSize="20sp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+
+                                    />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="22dp"
+                                    android:text="Owner"
+                                    android:textColor="#43464b"
+                                    android:textSize="18dp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="3dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="#ABB2B8"></RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="20dp">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/venticat2"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Monica Sucianto"
+                                    android:textColor="#43464b"
+                                    android:textSize="20sp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="15dp"
+
+                                    />
+                        </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigation"
+            android:background="#ffff"
+            app:itemTextColor="@drawable/selector"
+            app:itemIconTint="@drawable/selector"
+            app:menu="@menu/menu_nav"
+
+            android:layout_alignParentBottom="true"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1FFFF"
+    tools:context=".tampil_data">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1FFFF"
+        android:theme="@style/MyThemeOverlay_Toolbar2"
+        app:elevation="0dp"
+        app:titleTextColor="#A6AFB7">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Lihat Data Barang"
+            android:textColor="#8AA7C1"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        app:queryHint="Search by name"
+        app:iconifiedByDefault="false"
+        android:layout_margin="2dp"
+        android:background="#33316B83"
+        android:focusable="false"
+        app:theme="@style/ThemeOverlay.MyApp.ActionBar"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        ></androidx.appcompat.widget.SearchView>
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
+

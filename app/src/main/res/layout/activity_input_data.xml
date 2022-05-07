@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1FFFF"
+    tools:context=".input_data">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1FFFF"
+        android:theme="@style/MyThemeOverlay_Toolbar2"
+        app:elevation="0dp">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Input Data Barang"
+            android:textColor="#8AA7C1"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:background="#DFDFDF"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="676dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:elevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/goods"
+                    app:tint="#6FCECE"
+                    android:layout_gravity="center_vertical"
+                    ></ImageView>
+                <TextView
+                    android:layout_margin="20dp"
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masukkan Nama Barang"
+                    android:textColor="#6FCECE"/>
+            </LinearLayout>
+
+
+            <EditText
+                android:paddingTop="2dp"
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:hint="Nama"
+                android:paddingLeft="15dp"
+                android:textColor="#316B83"
+                android:textColorHint="#ABB2B8"
+                android:backgroundTint="#336D8299"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="15dp"
+            android:elevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/goods"
+                    app:tint="#6FCECE"
+                    android:layout_gravity="center_vertical"
+                    ></ImageView>
+                <TextView
+                    android:layout_margin="20dp"
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masukkan Jumlah Stok"
+                    android:textColor="#6FCECE"/>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/stock"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:hint="Stok"
+                android:paddingLeft="15dp"
+                android:textColor="#316B83"
+                android:textColorHint="#ABB2B8"
+                android:backgroundTint="#336D8299"
+                android:inputType="phone"
+                android:digits="1234567890"
+                android:paddingTop="2dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="15dp"
+            android:elevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/money_svgrepo_com"
+                    app:tint="#6FCECE"
+                    android:layout_gravity="center_vertical"
+                    ></ImageView>
+                <TextView
+                    android:layout_margin="20dp"
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masukkan Harga Barang"
+                    android:textColor="#6FCECE"/>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/harga"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:hint="Harga"
+                android:paddingLeft="15dp"
+                android:textColor="#316B83"
+                android:textColorHint="#ABB2B8"
+                android:backgroundTint="#336D8299"
+                android:inputType="phone"
+                android:digits="1234567890"
+                android:paddingTop="2dp"
+                />
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="115dp"
+            android:textColor="#316B83"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/emptyimage"/>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/bt_camera"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#316B83"
+                android:padding="6dp"
+                android:text="Capture"
+                android:drawableLeft="@drawable/cam"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/bt_gallary"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#316B83"
+                android:text="Select From Gallery"
+                android:textColor="@android:color/white" />
+        </LinearLayout>-->
+
+
+        <Button
+            android:id="@+id/simpan_data"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#85DCDC"
+            android:text="Simpan Data"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
